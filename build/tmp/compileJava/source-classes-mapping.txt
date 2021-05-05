@@ -1,2 +1,30 @@
+hello/core/member/MemberRepository.java
+ hello.core.member.MemberRepository
+hello/core/member/Member.java
+ hello.core.member.Member
+hello/core/member/MemberServiceImpl.java
+ hello.core.member.MemberServiceImpl
+hello/core/MemberApp.java
+ hello.core.MemberApp
+hello/core/member/MemberMemoryRepository.java
+ hello.core.member.MemberMemoryRepository
 hello/core/CoreApplication.java
  hello.core.CoreApplication
+hello/core/member/MemberService.java
+ hello.core.member.MemberService
+hello/core/member/Grade.java
+ hello.core.member.Grade
+hello/core/order/Order.java
+ hello.core.order.Order
+hello/core/discount/DiscountPolicy.java
+ hello.core.discount.DiscountPolicy
+hello/core/order/OrderService.java
+ hello.core.order.OrderService
+hello/core/discount/FixDiscountPolicy.java
+ hello.core.discount.FixDiscountPolicy
+hello/core/OrderApp.java
+ hello.core.OrderApp
+hello/core/order/OrderServiceImpl.java
+ hello.core.order.OrderServiceImpl
+hello/core/discount/RateDiscountPolicy.java
+ hello.core.discount.RateDiscountPolicy

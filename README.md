@@ -40,3 +40,4 @@
 - DIP
 - OCP
 - Interface設計
+- AppConfig設計

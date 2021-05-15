@@ -52,7 +52,6 @@ public class ApplicationContextSameBeanFindTest {
     //Class 안에 Static 만들 떄의 장점 : Scope을 해당 클래스로 특정하겠다는 의도
     @Configuration
     static class SameBeanConfig {
-
         @Bean
         public MemberRepository memberRepository1() {
             return new MemberMemoryRepository();

@@ -1,10 +1,7 @@
 package hello.core.order;
 
 import hello.core.discount.DiscountPolicy;
-import hello.core.discount.FixDiscountPolicy;
-import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.Member;
-import hello.core.member.MemberMemoryRepository;
 import hello.core.member.MemberRepository;
 
 public class OrderServiceImpl implements OrderService{
@@ -31,5 +28,12 @@ public class OrderServiceImpl implements OrderService{
         int discountPrice = discountPolicy.discount(member, itemPrice);
 
         return new Order(memberId, itemName, itemPrice, discountPrice);
+    }
+
+    /**
+     * ForTest(Singleton)
+     */
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }

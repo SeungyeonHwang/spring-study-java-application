@@ -1,9 +1,12 @@
 package hello.core.member;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
 //역할-구현에서 구현
+@Component  //Bean 등록 안해도 @ComponentScan에서 알아서 빈 등록 해줌
 public class MemberMemoryRepository implements MemberRepository {
 
     //MemoryDB -> For Test

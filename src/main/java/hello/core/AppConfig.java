@@ -15,15 +15,23 @@ import org.springframework.context.annotation.Configuration;
 //객체의 생성과 연결 담당
 //실제 동작에 필요한 구현객체를 실행함
 //설계에 대한 정보가 고스란히 여기서 보여진다(전체 구성 빠르게 파악 가능)
+
+/**
+ * @Configuration 안붙이고 @Bean 만적용한다면
+ * 순수한 Class 나온다 (싱글톤 위한 조작이 없어짐 -> 싱글톤 보장 못함)
+ * 크게 고민할 것이 없다, 스프링 설정정보는 항상 @Configuration 사용
+ */
 @Configuration
 public class AppConfig {
 
     /**
      * [ Call History ]
      * call AppConfig.memberService
-     * call AppConfig.memberRepository -> 3번호출 되어야 되는데 1번만 호출? 
+     * call AppConfig.memberRepository -> 3번호출 되어야 되는데 1번만 호출?
      * call AppConfig.orderService
      */
+
+    //@Autowired MemberRepository memberRepository; -> Bean에 등록된걸 가져와서 다시 쓰는 것 (이런 방법도 가능)
 
     //@Bean memberService -> new MemoryMemberRepository()
     //@Bean orderService -> new MemoryMemberRepository()

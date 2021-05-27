@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
  * 순수한 Class 나온다 (싱글톤 위한 조작이 없어짐 -> 싱글톤 보장 못함)
  * 크게 고민할 것이 없다, 스프링 설정정보는 항상 @Configuration 사용
  */
-@Configuration
+
 public class AppConfig {
 
     /**
